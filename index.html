@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato único persona natural - Jesus Ríos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <form action="/mi-formulariovs" name="form" id="form" method="GET"></form>
+    <header>
+        <div id="cabecera">
+            <img src="img/escudo.png" alt="Escudo de la republica de colombia">
+            <div id="titulo">
+                <p id="formato">FORMATO ÚNICO</p>
+                <h1>HOJA DE VIDA</h1>
+                <p id="persona">Persona natural</p>
+                <p id="leyes">(Leyes 190 de 1995, 489 y 443 de 1998)</p>
+            </div>
+            <div id="entidad-receptora">
+                <p>ENTIDAD RECEPTORA</p>
+                <input type="text" name="entidadReceptora" form="form">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="datos-personales">
+            <div id="titulo-datos">
+                <div id="numero">1</div><div id="guion">-</div><div id="tituloDatos">DATOS PERSONALES</div>
+            </div>
+            <div id="informacion-personal">
+                <div id="fila-1">
+                    <div class="tituloD">
+                        PRIMER APELLIDO <br>
+                        <input type="text" name="primerApellido" class="inputT" form="form">
+                    </div><br>
+                    
+                    <div class="tituloD">
+                        SEGUNDO APELLIDO (O DE CASADA) <br>
+                        <input type="text" name="segundoApellido" class="inputT" form="form">
+                    </div>
+                    
+                    <div class="tituloD">
+                        NOMBRES <br>
+                        <input type="text" name="nombres" class="inputT" form="form">
+                    </div>
+                </div>
+                <div id="fila-2">
+                    <div id="documentoIDE">
+                        <span class="tituloD">DOCUMENTO DE IDENTIFICACIÓN</span><br>
+                        <span>C.C</span><input type="radio" name="documento" form="form" class="radio">
+                        <span>C.E</span><input type="radio" name="documento" form="form" class="radio">
+                        <span>PAS</span><input type="radio" name="documento" form="form" class="radio">
+                    </div>
+                    <div id="sexo">
+                        <span class="tituloD">SEXO</span><br>
+                        <span>F</span><input type="radio" name="sexo" form="form" class="radio">
+                        <span>M</span><input type="radio" name="sexo" form="form" class="radio">
+                    </div>
+                    <div id="nacion">
+                        <div id="nacionalidad">
+                            <span class="tituloD">NACIONALIDAD</span><br>
+                            <span>COL.</span><input type="radio" name="nacionalidad" form="form" class="radio">
+                            <span>EXTRANJERO</span><input type="radio" name="nacionalidad" form="form" class="radio">
+                        </div>
+                        <div id="paisN">
+                            <span class="tituloD">PAIS</span><br>
+                            <input type="text" name="pais" class="inputT" form="form">
+                        </div>
+                    </div>
+                </div>
+                <div id="fila-3">
+                    <span class="tituloD">LIBRETA MILITAR</span><br><br>
+                    <span>PRIMERA CLASE</span><input type="radio" name="libreta" form="form" class="radio">
+                    <span>SEGUNDA CLASE</span><input type="radio" name="libreta" form="form" class="radio">
+                    <span>NÚMERO <input type="number" name="numeroL" class="inputT" form="form"></span>
+                    <span>D.M <input type="text" name="DM" class="inputT" form="form"></span>
+                </div>
+                <div id="fila-4">
+                    <div id="fechaN">
+                        <div>
+                            <span class="tituloD">FECHA Y LUGAR DE NACIMIENTO</span>
+                        </div>
+                        <div>
+                            <span>FECHA</span>
+                            <div class="datosS">
+                                <span>DÍA</span><input type="number" id="dia" name="dia" max="31" min="0" form="form">
+                                <span>MES</span><input type="number" id="mes" name="mes" max="12" min="0" form="form">
+                                <span>AÑO</span><input type="number" id="año" name="anio" max="2021" min="0" form="form">
+                            </div>
+                        </div>
+                        <div>
+                            <span>PAÍS</span>
+                            <div class="datosS">
+                                <input type="text" name="paisN" class="inputT" form="form">
+                            </div>
+                        </div>
+                        <div>
+                            <span>DEPTO</span>
+                            <div class="datosS">
+                                <input type="text" name="depto" class="inputT" form="form">
+                            </div>
+                        </div>    
+                        <div>
+                            <span>MUNICIPIO</span>
+                            <div class="datosS">
+                                <input type="text" name="municipio" class="inputT" form="form">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="direccionC">
+                        <span class="tituloD">DIRECCION DE CORRESPONDENCIA</span><br>
+                        <input type="text" name="direccionC" class="inputT" id="inputDireccion" form="form"><br><br>
+                        <span>PAÍS  <input type="text" name="paisC" class="inputT" id="inputPais" form="form"></span>
+                        <span>DEPTO <input type="text" name="deptoC" class="inputT" id="inputDepto" form="form"></span><br><br>
+                        <span>MUNICIPIO <input type="text" name="municipioC" class="inputT" id="inputMunicipio" form="form"></span><br><br>
+                        <span>TELEFONO <input type="number" name="telefonoC" class="inputT" id="inputTelefono" form="form"></span>
+                        <span>EMAIL <input type="email" name="emailC" class="inputT" id="inputEmail" form="form"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div-submit">
+            <input type="submit" value="ENVIAR" form="form" id="submit">
+        </div>
+    </main>
+    <script src="js/codigo.js"></script>
+</body>
+</html>

@@ -302,7 +302,12 @@ body{
     cursor: pointer;
 }
 
-
+footer{
+    background-color: black;
+    color: white;
+    padding: 2px 0;
+    text-align: center;
+}
 
 
 
